@@ -1,0 +1,5 @@
+com\uc\util\dirtools\Switches.class
+com\uc\util\dirtools\Main.class
+com\uc\util\dirtools\FileTools.class
+com\uc\util\dirtools\DirTools.class
+com\uc\util\dirtools\tests\Test_NG.class
