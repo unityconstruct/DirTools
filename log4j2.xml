@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="log-path">W:/</Property>
+	</Properties>
+	<Appenders>
+		<RollingFile name="RollingFile" fileName="logs/app.log"
+			filePattern="logs/app-%d{MM-dd-yyyy}.log.gz" ignoreExceptions="false">
+			<PatternLayout>
+				<Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+			</PatternLayout>
+			<TimeBasedTriggeringPolicy />
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Root level="TRACE">
+			<AppenderRef ref="RollingFile" />
+		</Root>
+		<logger name="com.uc.test.selenium.util.TestLog" level="TRACE">
+			<AppenderRef ref="RollingFile" />
+		</logger>
+	</Loggers>
+</Configuration>
